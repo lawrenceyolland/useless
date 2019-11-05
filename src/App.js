@@ -31,9 +31,9 @@ class App extends Component {
 
   renderEmoji = c => {
     if (c % 5 === 0) {
-      return <span>🖕</span>;
+      return <span role="img">🖕</span>;
     } else {
-      return <span>🤚</span>;
+      return <span role="img">🤚</span>;
     }
   };
 
@@ -47,7 +47,7 @@ class App extends Component {
         <div className="round centred"></div>
         <div className="box centred">
           <div className="button" onClick={this.flip}>
-            <div className={"light centred" + " " + lightStatus}></div>
+            <div className={`light centred ${lightStatus}`}></div>
           </div>
           <div className="hatch gap"></div>
           <div className={`hatch cover ${switchStatus}`}></div>
