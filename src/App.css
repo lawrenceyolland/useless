@@ -34,9 +34,14 @@ body {
   box-shadow: 0 2px 25px rgba(255, 0, 0, 0.5);
 }
 
-.light.green {
+.light.green,
+div.button:hover > .light {
   background: palegreen;
   box-shadow: 0 2px 25px rgba(0, 255, 0, 0.5);
+}
+
+div.button:hover {
+  cursor: pointer;
 }
 
 .centred {
@@ -55,6 +60,7 @@ body {
   position: absolute;
   right: 10%;
   z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .hatch {
